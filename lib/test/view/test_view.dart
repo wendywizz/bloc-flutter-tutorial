@@ -7,14 +7,7 @@ class TestView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Text(
-            'Test Page',
-            style: TextStyle(backgroundColor: Colors.red),
-          ),
-        ],
+        children: [],
       ),
     );
   }
