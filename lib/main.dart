@@ -6,5 +6,5 @@ import 'app.dart';
 
 void main() {
   Bloc.observer = CounterObserver();
-  runApp(TestApp());
+  runApp(FacebookCloneApp());
 }
