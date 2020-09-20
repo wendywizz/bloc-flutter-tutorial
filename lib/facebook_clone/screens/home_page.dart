@@ -1,4 +1,6 @@
 import 'package:bloc_starter_weather/facebook_clone/data/data.dart';
+import 'package:bloc_starter_weather/facebook_clone/models/post_model.dart';
+import 'package:bloc_starter_weather/facebook_clone/widgets/post_container.dart';
 import 'package:bloc_starter_weather/facebook_clone/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:bloc_starter_weather/facebook_clone/config/palette.dart';
@@ -47,7 +49,29 @@ class HomePage extends StatelessWidget {
             sliver: SliverToBoxAdapter(
               child: Rooms(onlineUsers: onlineUsers),
             ),
-          )
+          ),
+          SliverPadding(
+            padding: const EdgeInsets.fromLTRB(0, 10, 0, 5),
+            sliver: SliverToBoxAdapter(
+              child: Stories(
+                currentUser: currentUser,
+                stories: stories,
+              ),
+            ),
+          ),
+          SliverPadding(
+            padding: const EdgeInsets.fromLTRB(0, 10, 0, 5),
+            sliver: SliverToBoxAdapter(),
+          ),
+          SliverList(
+            delegate: SliverChildBuilderDelegate(
+              (context, index) {
+                final Post post = posts[index];
+                return PostContainer(post: post);
+              },
+              childCount: posts.length,
+            ),
+          ),
         ],
       ),
     );
