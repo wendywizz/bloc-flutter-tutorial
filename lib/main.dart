@@ -1,5 +1,5 @@
 import 'package:bloc/bloc.dart';
-import 'package:bloc_starter_weather/counter_observer.dart';
+import 'package:bloc_starter_weather/counter/counter_observer.dart';
 import 'package:flutter/material.dart';
 
 import 'app.dart';

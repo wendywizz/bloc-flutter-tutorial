@@ -11,10 +11,11 @@ class CounterApp extends MaterialApp {
 class FacebookCloneApp extends MaterialApp {
   FacebookCloneApp()
       : super(
-          home: const HomePage(),
+          home: NavScreen(),
           theme: ThemeData(
-              primarySwatch: Colors.blue,
-              visualDensity: VisualDensity.adaptivePlatformDensity,
-              scaffoldBackgroundColor: Palette.scaffold),
+            primarySwatch: Colors.blue,
+            visualDensity: VisualDensity.adaptivePlatformDensity,
+            scaffoldBackgroundColor: Palette.scaffold,
+          ),
         );
 }
