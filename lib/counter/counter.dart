@@ -1,2 +1,6 @@
-export 'cubit/counter_cubit.dart';
-export 'view/counter_page.dart';
+import 'package:bloc_starter_weather/counter/view/counter_page.dart';
+import 'package:flutter/material.dart';
+
+class CounterApp extends MaterialApp {
+  CounterApp() : super(home: const CounterPage());
+}

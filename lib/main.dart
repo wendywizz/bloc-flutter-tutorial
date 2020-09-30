@@ -1,10 +1,6 @@
-import 'package:bloc/bloc.dart';
-import 'package:bloc_starter_weather/counter/counter_observer.dart';
+import 'package:bloc_starter_weather/music/music.dart';
 import 'package:flutter/material.dart';
 
-import 'app.dart';
-
 void main() {
-  Bloc.observer = CounterObserver();
-  runApp(FacebookCloneApp());
+  runApp(MusicApp());
 }
