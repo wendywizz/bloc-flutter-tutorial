@@ -1,3 +1,4 @@
+import 'package:bloc_starter_weather/music/data/music.dart';
 import 'package:bloc_starter_weather/music/widgets/circle_button.dart';
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
@@ -47,9 +48,6 @@ class _MusicListState extends State<MusicList> {
               ),
             ),
             centerTitle: true,
-          ),
-          SliverToBoxAdapter(
-            child: Container(),
           ),
         ],
       ),
